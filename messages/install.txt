@@ -3,4 +3,4 @@ SublimeLinter-html-tidy
 
 This linter plugin for SublimeLinter provides an interface to tidy.
 
-For more information, please see https://github.com/Aparajita/SublimeLinter-html-tidy.
+For more information, please see https://github.com/SublimeLinter/SublimeLinter-html-tidy.
