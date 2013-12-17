@@ -17,7 +17,7 @@ class HtmlTidy(Linter):
 
     """Provides an interface to tidy."""
 
-    syntax = 'html'
+    syntax = ('html', 'html 5')
     cmd = 'tidy -errors -quiet -utf8'
     regex = r'^line (?P<line>\d+) column (?P<col>\d+) - (?:(?P<error>Error)|(?P<warning>Warning)): (?P<message>.+)'
     line_col_base = (1, 1)
