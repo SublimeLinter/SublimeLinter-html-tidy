@@ -4,6 +4,7 @@ SublimeLinter-html-tidy
 This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) provides an interface to tidy (either the [html4](http://tidy.sourceforge.net) or [html5]() version). It will be used with files that have the “HTML” syntax.
 
 ## Installation
+SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](https://github.com/SublimeLinter/SublimeLinter.github.io/wiki/Installation).
 
 ### Linter installation
 Before installing this plugin, you must ensure that `tidy` is installed on your system.
@@ -16,7 +17,7 @@ Before installing this plugin, you must ensure that `tidy` is installed on your 
 
 On Mac OS X and Linux, you can also try building the experimental [html5 tidy](https://github.com/w3c/tidy-html5).
 
-Once tidy is installed, you can proceed to install the SublimeLinter-html-tidy plugin.
+Once tidy is installed, if the SublimeLinter-html-tidy plugin is not yet installed, you can proceed to install it.
 
 ### Plugin installation
 Please use [Package Control](https://sublime.wbond.net/installation) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
