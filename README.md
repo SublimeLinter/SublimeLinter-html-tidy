@@ -15,7 +15,7 @@ Before installing this plugin, you must ensure that `tidy` is installed on your 
 
 - **Windows** – A Windows binary is available [here](http://www.paehl.com/open_source/?HTML_Tidy_for_Windows).
 
-On Mac OS X and Linux, you can also try building the experimental [html5 tidy](https://github.com/w3c/tidy-html5).
+On Mac OS X and Linux, you can also try building the experimental [html5 tidy](https://github.com/w3c/tidy-html5). A Windows binary with HTML5 support is available [here](http://tidybatchfiles.info/).
 
 Once tidy is installed, if the SublimeLinter-html-tidy plugin is not yet installed, you can proceed to install it.
 
