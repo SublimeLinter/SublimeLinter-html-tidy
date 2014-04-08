@@ -1,7 +1,7 @@
 SublimeLinter-html-tidy
 =========================
 
-[![Build Status](https://khancdn.eu/badges.php?service=https%3A%2F%2Ftravis-ci.org%2FSublimeLinter%2FSublimeLinter-html-tidy.png%3Fbranch%3Dmaster)](https://travis-ci.org/SublimeLinter/SublimeLinter-html-tidy)
+[![Build Status](travis-ci.org/SublimeLinter/SublimeLinter-html-tidy.svg?branch=master://travis-ci.org/SublimeLinter/SublimeLinter-html-tidy)
 
 This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to tidy (either the [html4](http://tidy.sourceforge.net) or [html5](http://w3c.github.io/tidy-html5/) version). It will be used with files that have the “HTML” syntax.
 
