@@ -21,3 +21,4 @@ class HtmlTidy(Linter):
     cmd = 'tidy -errors -quiet -utf8'
     regex = r'^line (?P<line>\d+) column (?P<col>\d+) - (?:(?P<error>Error)|(?P<warning>Warning)): (?P<message>.+)'
     error_stream = util.STREAM_STDERR
+    tab_width = 8
