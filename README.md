@@ -11,13 +11,11 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 ### Linter installation
 Before installing this plugin, you must ensure that `tidy` is installed on your system.
 
-- **Mac OS X** – `tidy` comes preinstalled on recent versions of Mac OS X. You can install a more recent version by using [Homebrew](http://brew.sh) and `brew install homebrew/dupes/tidy`.
+- **Mac OS X** – `tidy` comes preinstalled on recent versions of Mac OS X. You can install a more recent stable version by using [Homebrew](http://brew.sh) and `brew install homebrew/dupes/tidy`. The experimental [html5](https://github.com/w3c/tidy-html5) version can be installed with `brew install homebrew/dupes/tidy --HEAD` or built and installed from source.
 
-- **Linux** – You should be able to install tidy using the system’s package manager. For example, on Debian-based systems (including Ubuntu), you can install with `sudo apt-get install tidy`.
+- **Linux** – You should be able to install tidy using the system’s package manager. For example, on systems which use APT (such as Debian or its derivations), tidy can be installed with `sudo apt-get install tidy`. The experimental [html5](https://github.com/w3c/tidy-html5) version can be built and installed from source.
 
-- **Windows** – A Windows binary is available [here](http://www.paehl.com/open_source/?HTML_Tidy_for_Windows).
-
-On Mac OS X and Linux, you can also try building the experimental [html5 tidy](https://github.com/w3c/tidy-html5). A Windows binary with HTML5 support is available [here](http://tidybatchfiles.info/).
+- **Windows** – Windows binaries are available for both the [stable](http://www.paehl.com/open_source/?HTML_Tidy_for_Windows), and experimental [html5](http://tidybatchfiles.info/) versions.
 
 ### Linter configuration
 In order for `tidy` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
