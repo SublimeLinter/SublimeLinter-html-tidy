@@ -11,7 +11,7 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 ### Linter installation
 Before installing this plugin, you must ensure that `tidy` is installed on your system.
 
-- **Mac OS X** – `tidy` comes preinstalled on recent versions of Mac OS X. You can install a more recent stable version by using [Homebrew](http://brew.sh) and `brew install homebrew/dupes/tidy`. The experimental [html5](https://github.com/w3c/tidy-html5) version can be installed with `brew install homebrew/dupes/tidy --HEAD` or built and installed from source.
+- **Mac OS X** – `tidy` comes preinstalled on recent versions of Mac OS X. You can install the [html5](https://github.com/w3c/tidy-html5) version by using [Homebrew](http://brew.sh) and `brew install tidy-html5`, or it can be built and installed from source.
 
 - **Linux** – You should be able to install tidy using the system’s package manager. For example, on systems which use APT (such as Debian or its derivations), tidy can be installed with `sudo apt-get install tidy`. The experimental [html5](https://github.com/w3c/tidy-html5) version can be built and installed from source.
 
