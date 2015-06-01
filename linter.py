@@ -18,7 +18,7 @@ class HtmlTidy(Linter):
     """Provides an interface to tidy."""
 
     syntax = 'html'
-    if shutils.which('tidy5'):
+    if shutil.which('tidy5'):
         cmd = 'tidy5 -errors -quiet -utf8'
     else:
         cmd = 'tidy -errors -quiet -utf8'
