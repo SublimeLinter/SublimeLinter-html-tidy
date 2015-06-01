@@ -13,6 +13,7 @@
 from SublimeLinter.lint import Linter, util
 import shutil
 
+
 class HtmlTidy(Linter):
 
     """Provides an interface to tidy."""
