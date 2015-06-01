@@ -11,13 +11,16 @@
 """This module exports the HtmlTidy plugin class."""
 
 from SublimeLinter.lint import Linter, util
-
+import shutil
 
 class HtmlTidy(Linter):
 
     """Provides an interface to tidy."""
 
     syntax = 'html'
-    cmd = 'tidy -errors -quiet -utf8'
+    if shutils.which('tidy5'):
+        cmd = 'tidy5 -errors -quiet -utf8'
+    else:
+        cmd = 'tidy -errors -quiet -utf8'
     regex = r'^line (?P<line>\d+) column (?P<col>\d+) - (?:(?P<error>Error)|(?P<warning>Warning)): (?P<message>.+)'
     error_stream = util.STREAM_STDERR
