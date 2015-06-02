@@ -9,7 +9,7 @@ This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) pro
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](http://sublimelinter.readthedocs.org/en/latest/installation.html).
 
 ### Linter installation
-Before installing this plugin, you must ensure that `tidy` is installed on your system.
+Before installing this plugin, you must ensure that `tidy` or `tidy5` are installed on your system. If both are installed, `tidy5` will be utilised.
 
 - **Mac OS X** – `tidy` comes preinstalled on recent versions of Mac OS X. You can install the [html5](https://github.com/w3c/tidy-html5) version by using [Homebrew](http://brew.sh) and `brew install tidy-html5`, or it can be built and installed from source.
 
