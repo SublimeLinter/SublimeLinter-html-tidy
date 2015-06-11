@@ -11,7 +11,6 @@
 """This module exports the HtmlTidy plugin class."""
 
 from SublimeLinter.lint import Linter, util
-import shutil
 
 
 class HtmlTidy(Linter):
@@ -19,7 +18,7 @@ class HtmlTidy(Linter):
     """Provides an interface to tidy."""
 
     syntax = 'html'
-    if shutil.which('tidy5'):
+    if Linter.which('tidy5'):
         cmd = 'tidy5 -errors -quiet -utf8'
     else:
         cmd = 'tidy -errors -quiet -utf8'
