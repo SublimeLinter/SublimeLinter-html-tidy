@@ -28,7 +28,7 @@ class HtmlTidy(Linter):
 
     def cmd(self):
         """Return a tuple with the command line to execute."""
-        command = [self.executable_path, '-errors', '-quiet', '-utf8']
+        command = [Linter.which('tidy') or '@tidy_or_tidy5_not_found', '-errors', '-quiet', '-utf8']
         if Linter.which('tidy5'):
             command[0] = Linter.which('tidy5')
         return command
