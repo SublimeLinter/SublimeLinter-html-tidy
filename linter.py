@@ -11,6 +11,7 @@
 """This module exports the HtmlTidy plugin class."""
 
 from SublimeLinter.lint import Linter, util
+import sublime
 
 
 class HtmlTidy(Linter):
@@ -18,9 +19,16 @@ class HtmlTidy(Linter):
     """Provides an interface to tidy."""
 
     syntax = 'html'
-    if Linter.which('tidy5'):
-        cmd = 'tidy5 -errors -quiet -utf8'
-    else:
-        cmd = 'tidy -errors -quiet -utf8'
+    executable = 'sh'
+    if sublime.platform() == 'windows':
+        executable = 'cmd'
+
     regex = r'^line (?P<line>\d+) column (?P<col>\d+) - (?:(?P<error>Error)|(?P<warning>Warning)): (?P<message>.+)'
     error_stream = util.STREAM_STDERR
+
+    def cmd(self):
+        """Return a tuple with the command line to execute."""
+        command = [self.executable_path, '-errors', '-quiet', '-utf8']
+        if Linter.which('tidy5'):
+            command[0] = Linter.which('tidy5')
+        return command
