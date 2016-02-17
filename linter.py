@@ -15,7 +15,7 @@ from SublimeLinter.lint import Linter, util
 
 
 class HtmlTidy(Linter):
-    
+
     """Provides an interface to tidy."""
 
     syntax = 'html'
