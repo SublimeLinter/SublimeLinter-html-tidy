@@ -8,8 +8,4 @@ install:
 # command to run tests
 script:
   - flake8 . --max-line-length=120
-<<<<<<< HEAD
   - pydocstyle . --add-ignore=D202
-=======
-  - pep257 . --add-ignore=D202,D211
->>>>>>> Update .travis.yml
