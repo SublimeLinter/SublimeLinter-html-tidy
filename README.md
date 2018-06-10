@@ -10,7 +10,7 @@ SublimeLinter must be installed in order to use this plugin.
 
 Please install via [Package Control](https://sublime.wbond.net/installation).
 
-Before installing this plugin, you must ensure that `tidy` or `tidy5` are installed on your system. `tidy5` will be used over `tidy` id available.
+Before installing this plugin, you must ensure that `tidy` or `tidy5` are installed on your system. `tidy5` will be used over `tidy` if available.
 
 - **Mac OS X** – `tidy` comes preinstalled on recent versions of Mac OS X. You can install the [html5](https://github.com/w3c/tidy-html5) version by using [Homebrew](http://brew.sh) and `brew install tidy-html5`.
 
