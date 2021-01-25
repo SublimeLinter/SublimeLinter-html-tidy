@@ -19,3 +19,20 @@ Before installing this plugin, you must ensure that `tidy` or `tidy5` are instal
 - **Windows** – Windows binaries are available for the [html5](http://tidybatchfiles.info/) version.
 
 In order for `tidy` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter.
+
+## Enable for HTML sub syntax
+
+To enable html-tidy for another syntax edit the SublimeLinter user settings. This example should enable html-tidy for any html sub sytnax. For example, HTML (jinja2), HTML (Rails), HTML (ASP):
+
+```json
+// SublimeLinter Settings - User
+{
+  "linters": {
+    "htmltidy": {
+      "selector": "text.html"
+    },
+  }
+}
+
+
+```
